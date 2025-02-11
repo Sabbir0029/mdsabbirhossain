@@ -8,8 +8,13 @@ import { FaLaptopCode } from "react-icons/fa";
 import { FaBlog } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { getProjects } from "@/util/getProjects";
+import { TypeOfProject } from "@/models/projects/Projects.interface";
+import SmallCard from "../ui/SmallCard";
 
-const HomePageAllContent = () => {
+const HomePageAllContent = async () => {
+  const projects = await getProjects();
+  console.log(await getProjects());
   return (
     <div className=" flex m-auto">
       <div className="w-2/4 bg-slate-700">
@@ -245,8 +250,10 @@ const HomePageAllContent = () => {
             <h2 className="font-bold text-2xl mt-1  text-black">MY PROJECTS</h2>
           </div>
           <div className="ml-8 ">
-            <div className="mt-4 grid grid-cols-4 gap-2">
-              <h1>MY PROJECTS</h1>
+            <div className=" m-4 grid grid-cols-2 gap-3">
+                {projects?.result?.map((project: TypeOfProject) => (
+                  <SmallCard key={project.livelink} project={project} />
+                ))}
             </div>
           </div>
         </section>
