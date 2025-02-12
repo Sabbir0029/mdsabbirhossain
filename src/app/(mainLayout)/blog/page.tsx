@@ -1,4 +1,10 @@
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Md. Sabbir Hossain || Blog",
+  description: "My All Blogs Here",
+};
 
 const blog = () => {
   return (

@@ -1,6 +1,8 @@
  export async function getProjects() {
   try {
-      const response = await fetch('http://localhost:3000/api/projects');
+      const response = await fetch('http://localhost:3000/api/projects',{
+        cache:'no-store'
+      });
       if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
       }

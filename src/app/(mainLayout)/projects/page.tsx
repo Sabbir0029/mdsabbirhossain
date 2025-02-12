@@ -1,10 +1,15 @@
 import BigCard from "@/components/ui/BigCard";
 import { TypeOfProject } from "@/models/projects/Projects.interface";
 import { getProjects } from "@/util/getProjects";
+import { Metadata } from "next";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "Md. Sabbir Hossain || Projects",
+  description: "My All Awesome Projects Here",
+};
+
 const projects = async () => {
-  
   const projects = await getProjects();
   return (
     <div className="container min-h-screen  dark:bg-gray-900 text-black dark:text-white transition-colors ">
