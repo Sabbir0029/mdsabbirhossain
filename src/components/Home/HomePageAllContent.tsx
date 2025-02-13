@@ -7,7 +7,7 @@ import Blogs from "./Blogs";
 import Personalinfo from "./Personalinfo";
 import ProjectsHome from "./ProjectsHome";
 
-const HomePageAllContent = async () => {
+const HomePageAllContent = () => {
   return (
     <div className=" flex m-auto">
       <div className="w-2/4 bg-slate-700">

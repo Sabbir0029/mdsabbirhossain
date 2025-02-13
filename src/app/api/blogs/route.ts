@@ -1,4 +1,3 @@
-
 import { connectDB } from "@/lib/connectDB";
 import { Blog } from "@/models/blogs/Blog.model";
 import { NextRequest, NextResponse } from "next/server";

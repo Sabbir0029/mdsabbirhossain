@@ -1,17 +1,16 @@
- export async function getProjects() {
+"use server";
+
+export async function getProjects() {
   try {
-      const response = await fetch('http://localhost:3000/api/projects',{
-        cache:'no-store'
-      });
-      if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return await response.json();
+    const response = await fetch("http://localhost:3000/api/projects");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    return await response.json();
   } catch (error) {
-      console.error('Error fetching projects:', error);
-      // Optionally return a fallback or empty data
-      return [];
+    console.error("Error fetching projects:", error);
+    throw error;
   }
 }
-
-  
