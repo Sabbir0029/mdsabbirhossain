@@ -19,9 +19,8 @@ export default function DownloadButton() {
     <div>
       {/* Outline Variant */}
       <Button
-        variant="outline"
         onClick={handleDownload}
-        className="flex items-center gap-2 bg-white text-gray-900"
+        className="flex items-center gap-2 bg-sky-600 text-white cursor-pointer hover:bg-sky-700 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 rounded-md font-bold"
       >
         <Download className="h-4 w-4" />
         Resume Download now

@@ -24,9 +24,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-19">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="text-2xl font-bold text-white">
+            {/* <a href="#" className="text-2xl font-bold text-white">
               SABBIR
-            </a>
+            </a> */}
           </div>
 
           {/* Desktop Navigation */}

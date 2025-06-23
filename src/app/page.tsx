@@ -51,7 +51,7 @@ export default function Portfolio() {
         <div className="grid grid-cols-1 lg:grid-cols-3 min-h-screen">
           {/* Left Sidebar */}
           <div
-            className={`bg-slate-700 text-white p-8 lg:p-12 transition-all duration-1000 ${
+            className={`bg-slate-800 text-white p-8 lg:p-12 transition-all duration-1000 ${
               isLoaded
                 ? "translate-x-0 opacity-100"
                 : "-translate-x-full opacity-0"
@@ -59,10 +59,10 @@ export default function Portfolio() {
           >
             {/* Header */}
             <div className="text-center mb-8">
-              <h1 className="text-3xl lg:text-4xl font-bold mb-2">
+              <h1 className="text-3xl text-white lg:text-4xl font-bold mb-2">
                 MD. SABBIR HOSSAIN
               </h1>
-              <p className="text-gray-300 text-sm lg:text-base tracking-wider">
+              <p className="text-gray-300 font-bold text-sm lg:text-base tracking-wider">
                 FULL-STACK WEB DEVELOPER | NEXT.JS DEVELOPER
               </p>
             </div>
@@ -91,33 +91,33 @@ export default function Portfolio() {
             {/* Contact */}
             <div className="mb-8">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-3">
-                  <span className="text-gray-800 font-bold text-sm">📧</span>
+                <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-3">
+                  <span className="text-gray-800 font-bold text-sm ">📧</span>
                 </div>
-                <h3 className="text-lg font-semibold">CONTACT ME</h3>
+                <h3 className="text-2xl text-white font-bold">CONTACT ME</h3>
               </div>
               <div className="space-y-3 text-sm">
                 <div className="flex items-center">
-                  <Phone className="w-4 h-4 mr-3 text-gray-300" />
-                  <span>+8801773147066</span>
+                  <Phone className="w-4 h-4 mr-3 text-gray-300 text-bold" />
+                  <span className="font-bold">+8801773147066</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-3 text-gray-300" />
-                  <span>mdsabbirhossain0029@gmail.com</span>
+                  <span className="font-bold">mdsabbirhossain0029@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Github className="w-4 h-4 mr-3 text-gray-300" />
-                  <span>https://github.com/sabbir0029</span>
+                  <span className="font-bold">https://github.com/sabbir0029</span>
                 </div>
                 <div className="flex items-center">
                   <LinkedinIcon className="w-4 h-4 mr-3 text-gray-300" />
-                  <span>
+                  <span className="font-bold">
                     https://www.linkedin.com/in/md-sabbir-hossain-8a8390227/
                   </span>
                 </div>
                 <div className="flex items-center">
                   <Globe className="w-4 h-4 mr-3 text-gray-300" />
-                  <span>www.noeltaylor.com</span>
+                  <span className="font-bold">www.noeltaylor.com</span>
                 </div>
               </div>
             </div>
@@ -125,29 +125,29 @@ export default function Portfolio() {
             {/* Education */}
             <div className="mb-8">
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-3">
                   <span className="text-gray-800 font-bold text-sm">🎓</span>
                 </div>
-                <h3 className="text-lg font-semibold">EDUCATION</h3>
+                <h3 className="text-2xl font-bold">EDUCATION</h3>
               </div>
               <div className="space-y-4 text-sm">
                 <div>
-                  <h4 className="font-semibold">Bsc in Engineering</h4>
-                  <p className="text-gray-300">
-                    Northern University Bangladesh,Dhaka
+                  <h4 className="text-xl font-bold text-white">Bsc in Engineering</h4>
+                  <p className="text-white font-semibold">
+                    Northern University Bangladesh,Dhaka.
                   </p>
-                  <p className="text-gray-300">
-                    Computer Science and Engineering
+                  <p className="text-white font-semibold">
+                    Computer Science and Engineering.
                   </p>
-                  <p className="text-gray-400 text-xs">6th Semester</p>
+                  <p className="text-white font-semibold">6th Semester</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold">Diploma in Engineering</h4>
-                  <p className="text-gray-300">
-                    Pabna Polytechnic Institute,Pabna
+                  <h4 className="text-xl font-bold text-white">Diploma in Engineering</h4>
+                  <p className="text-white font-semibold">
+                    Pabna Polytechnic Institute,Pabna.
                   </p>
-                  <p className="text-gray-300">Computer Technology</p>
-                  <p className="text-gray-400 text-xs">Passing Year : 2022</p>
+                  <p className="text-white font-semibold">Computer Technology.</p>
+                  <p className="text-white font-semibold">Passing Year : 2022</p>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function Portfolio() {
             {/* References */}
             <div>
               <div className="flex items-center mb-4">
-                <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center mr-3">
+                <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-3">
                   <span className="text-gray-800 font-bold text-sm">👥</span>
                 </div>
                 <h3 className="text-lg font-semibold">REFERENCES</h3>
@@ -188,12 +188,12 @@ export default function Portfolio() {
             {/* About Me */}
             <section className="mb-12">
               <div className="flex items-center mb-6">
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold text-sm">👤</span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800">ABOUT ME</h2>
               </div>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-900 leading-relaxed">
                 Hello, I am Md. Sabbir Hossain, a skilled and professional
                 Full-stack web developer as well as a next.js developer. I have
                 been working in these fields for a while and have gained much
@@ -204,7 +204,7 @@ export default function Portfolio() {
             {/* Job Experience */}
             <section className="mb-12">
               <div className="flex items-center mb-6">
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold text-sm">💼</span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800">
@@ -212,16 +212,16 @@ export default function Portfolio() {
                 </h2>
               </div>
               <div className="space-y-6">
-                <div className="border-l-4 border-gray-300 pl-6">
+                <div className="border-l-4 border-sky-500 pl-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-lg font-bold text-gray-800">
                       Professional Web Development
                     </h3>
-                    <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">
+                    <span className="text-sm text-gray-900 bg-gray-100 px-3 py-1 rounded">
                       Training Duration : 12 Months
                     </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-2">
+                  <p className="text-gray-600 mb-1">
                     Training Institute : Programming Hero
                   </p>
                   <p className="text-gray-600">
@@ -240,19 +240,19 @@ export default function Portfolio() {
                   </p>
                 </div>
 
-                <div className="border-l-4 border-gray-300 pl-6">
+                <div className="border-l-4 border-sky-500 pl-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-lg font-bold text-gray-800">
                       Web Development
                     </h3>
-                    <span className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded">
+                    <span className="text-sm text-gray-900 bg-gray-100 px-3 py-1 rounded">
                       Training Duration : 3 Months
                     </span>
                   </div>
-                  <p className="text-gray-600 text-sm mb-2">
+                  <p className="text-gray-600  mb-1">
                     Training Institute : Creative IT Institute Of Bangladesh.
                   </p>
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 ">
                     Topic Covered : Php, Laravel ,MySql
                   </p>
                 </div>
@@ -262,7 +262,7 @@ export default function Portfolio() {
             {/* Skills */}
             <section className="mb-12">
               <div className="flex items-center mb-6">
-                <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold text-sm">⚡</span>
                 </div>
                 <h2 className="text-2xl font-bold text-gray-800">SKILLS</h2>
@@ -274,13 +274,13 @@ export default function Portfolio() {
                       <span className="text-gray-700 font-medium">
                         {skill.name}
                       </span>
-                      <span className="text-gray-500 text-sm">
+                      <span className="text-neutral-800 font-bold text-sm">
                         {skill.level}%
                       </span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="w-full bg-red-300 rounded-full h-2">
                       <div
-                        className="bg-gray-800 h-2 rounded-full transition-all duration-1000 ease-out group-hover:bg-gray-600"
+                        className="bg-green-800 h-2 rounded-full transition-all duration-1000 ease-out group-hover:bg-gray-600"
                         style={{
                           width: isLoaded ? `${skill.level}%` : "0%",
                           transitionDelay: `${index * 200}ms`,
@@ -297,7 +297,7 @@ export default function Portfolio() {
               {/* Languages */}
               <section>
                 <div className="flex items-center mb-6">
-                  <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-sm">🌐</span>
                   </div>
                   <h2 className="text-xl font-bold text-gray-800">
@@ -322,7 +322,7 @@ export default function Portfolio() {
               {/* Hobbies */}
               <section>
                 <div className="flex items-center mb-6">
-                  <div className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center mr-4">
+                  <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center mr-4">
                     <span className="text-white font-bold text-sm">❤️</span>
                   </div>
                   <h2 className="text-xl font-bold text-gray-800">MY BLOGS</h2>

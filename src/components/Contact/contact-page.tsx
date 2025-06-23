@@ -1,14 +1,20 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin, Send, Clock, Users } from "lucide-react"
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin, Send,  Users } from "lucide-react";
 
 export default function Contactme() {
   const [formData, setFormData] = useState({
@@ -16,29 +22,32 @@ export default function Contactme() {
     email: "",
     subject: "",
     message: "",
-  })
+  });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
+    e.preventDefault();
+    console.log("Form submitted:", formData);
     // Handle form submission here
-  }
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-900 to-purple-800 text-white">
+    <div className="min-h-screen bg-white text-black">
       <div className="container mx-auto px-4 py-12">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold text-black mb-6">
             Get In <span className="text-yellow-300">Touch</span>
           </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            We did love to hear from you. Send us a message and we all respond as soon as possible.
+          <p className="text-xl text-black max-w-2xl mx-auto">
+            We did love to hear from you. Send us a message and we all respond
+            as soon as possible.
           </p>
         </div>
 
@@ -46,9 +55,9 @@ export default function Contactme() {
           {/* Contact Information Cards */}
           <div className="lg:col-span-1 space-y-6">
             {/* Contact Info Card */}
-            <Card className="bg-white/10 backdrop-blur-lg border-white/20 text-white">
+            <Card className="bg-white/10 backdrop-blur-lg border-white/20 text-black">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-yellow-300">
+                <CardTitle className="flex items-center gap-2 text-block-900">
                   <Mail className="h-5 w-5" />
                   Contact Information
                 </CardTitle>
@@ -60,7 +69,8 @@ export default function Contactme() {
                   </div>
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-white/80">+1 (555) 123-4567</p>
+                    <p className="text-black/80">+8801773147066</p>
+                    <p className="text-black/80">+8801862253229</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -69,7 +79,10 @@ export default function Contactme() {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-white/80">hello@company.com</p>
+                    <p className="text-black/80">
+                      mdsabbirhossain0029@gmail.com
+                    </p>
+                    <p className="text-black/80">sabbir914091@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -78,51 +91,28 @@ export default function Contactme() {
                   </div>
                   <div>
                     <p className="font-medium">Address</p>
-                    <p className="text-white/80">
-                      123 Business St, Suite 100
+                    <p className="text-black/80">
+                      Ishwardi, Pabna,
                       <br />
-                      New York, NY 10001
+                      Rajshahi,Bangladesh
                     </p>
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Business Hours Card */}
-            <Card className="bg-white/10 backdrop-blur-lg border-white/20 text-white">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-cyan-300">
-                  <Clock className="h-5 w-5" />
-                  Business Hours
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-2">
-                <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span className="text-white/80">9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span className="text-white/80">10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span className="text-white/80">Closed</span>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Team Card */}
-            <Card className="bg-white/10 backdrop-blur-lg border-white/20 text-white">
+            <Card className="bg-white/10 backdrop-blur-lg border-white text-black">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2 text-pink-300">
+                <CardTitle className="flex items-center gap-2 text-pink-600">
                   <Users className="h-5 w-5" />
                   Our Team
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-white/80">
-                  Our dedicated team of professionals is here to help you with any questions or concerns you may have.
+                <p className="text-black/80">
+                  Our dedicated team of professionals is here to help you with
+                  any questions or concerns you may have.
                 </p>
               </CardContent>
             </Card>
@@ -132,16 +122,19 @@ export default function Contactme() {
           <div className="lg:col-span-2">
             <Card className="bg-white/10 backdrop-blur-lg border-white/20">
               <CardHeader>
-                <CardTitle className="text-2xl text-white">Send us a Message</CardTitle>
-                <CardDescription className="text-white/80">
-                  Fill out the form below and we all get back to you within 24 hours.
+                <CardTitle className="text-2xl text-black">
+                  Send us a Message
+                </CardTitle>
+                <CardDescription className="text-black/80">
+                  Fill out the form below and we all get back to you within 24
+                  hours.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name" className="text-white font-medium">
+                      <Label htmlFor="name" className="text-black font-medium">
                         Full Name
                       </Label>
                       <Input
@@ -149,13 +142,13 @@ export default function Contactme() {
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-yellow-300"
+                        className="bg-white/20 border-white/30 text-black placeholder:text-black/60 focus:border-yellow-300"
                         placeholder="Your full name"
                         required
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="text-white font-medium">
+                      <Label htmlFor="email" className="text-black font-medium">
                         Email Address
                       </Label>
                       <Input
@@ -164,7 +157,7 @@ export default function Contactme() {
                         type="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-yellow-300"
+                        className="bg-white/20 border-white/30 text-black placeholder:text-black/60 focus:border-yellow-300"
                         placeholder="your.email@example.com"
                         required
                       />
@@ -172,7 +165,7 @@ export default function Contactme() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-white font-medium">
+                    <Label htmlFor="subject" className="text-black font-medium">
                       Subject
                     </Label>
                     <Input
@@ -180,14 +173,14 @@ export default function Contactme() {
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-yellow-300"
+                      className="bg-white/20 border-white/30 text-black placeholder:text-black/60 focus:border-yellow-300"
                       placeholder="What's this about?"
                       required
                     />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="text-white font-medium">
+                    <Label htmlFor="message" className="text-black font-medium">
                       Message
                     </Label>
                     <Textarea
@@ -195,7 +188,7 @@ export default function Contactme() {
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
-                      className="bg-white/20 border-white/30 text-white placeholder:text-white/60 focus:border-yellow-300 min-h-[120px]"
+                      className="bg-white/20 border-white/30 text-black placeholder:text-black/60 focus:border-yellow-300 min-h-[120px]"
                       placeholder="Tell us more about your inquiry..."
                       required
                     />
@@ -203,7 +196,7 @@ export default function Contactme() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white font-semibold py-3 text-lg transition-all duration-300 transform hover:scale-105"
+                    className="w-full bg-black hover:from-yellow-500 hover:to-orange-600 text-white font-semibold py-3 text-lg transition-all duration-300 transform hover:scale-105"
                   >
                     <Send className="h-5 w-5 mr-2" />
                     Send Message
@@ -213,28 +206,7 @@ export default function Contactme() {
             </Card>
           </div>
         </div>
-
-        {/* Bottom Section */}
-        <div className="mt-16 text-center">
-          <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 max-w-4xl mx-auto border border-white/20">
-            <h2 className="text-3xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
-            <p className="text-white/90 text-lg mb-6">
-              Let ts discuss how we can help bring your ideas to life. We are excited to work with you!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-white text-purple-600 hover:bg-white/90 font-semibold px-8 py-3">
-                Schedule a Call
-              </Button>
-              <Button
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-purple-600 font-semibold px-8 py-3"
-              >
-                View Our Work
-              </Button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  )
+  );
 }
