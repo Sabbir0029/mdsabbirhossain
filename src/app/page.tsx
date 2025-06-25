@@ -7,10 +7,7 @@ import {
   Phone,
   
   Globe,
-  Book,
-  Music,
-  Camera,
-  Gamepad2,
+  
   Github,
   LinkedinIcon,
 } from "lucide-react";
@@ -31,19 +28,19 @@ export default function Portfolio() {
     { name: "Adobe Illustrator", level: 58 },
   ];
 
-  const languages = [
-    { name: "English", level: "Native" },
-    { name: "Spanish", level: "Fluent" },
-    { name: "French", level: "Basic" },
-  ];
+  // const languages = [
+  //   { name: "English", level: "Native" },
+  //   { name: "Spanish", level: "Fluent" },
+  //   { name: "French", level: "Basic" },
+  // ];
 
-  const hobbies = [
-    { name: "Reading Books", icon: Book },
-    { name: "Music", icon: Music },
-    { name: "Photography", icon: Camera },
-    { name: "Gaming", icon: Gamepad2 },
-    { name: "Traveling", icon: Globe },
-  ];
+  // const hobbies = [
+  //   { name: "Reading Books", icon: Book },
+  //   { name: "Music", icon: Music },
+  //   { name: "Photography", icon: Camera },
+  //   { name: "Gaming", icon: Gamepad2 },
+  //   { name: "Traveling", icon: Globe },
+  // ];
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -160,7 +157,7 @@ export default function Portfolio() {
                 </div>
                 <h3 className="text-lg font-semibold">REFERENCES</h3>
               </div>
-              <div className="space-y-4 text-sm">
+              {/* <div className="space-y-4 text-sm">
                 <div>
                   <h4 className="font-semibold">CHARLIE B. STANTON</h4>
                   <p className="text-gray-300">Art Director</p>
@@ -173,7 +170,7 @@ export default function Portfolio() {
                   <p className="text-gray-400 text-xs">robert@agency.com</p>
                   <p className="text-gray-400 text-xs">+1 234 567 8902</p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -304,7 +301,7 @@ export default function Portfolio() {
                     MY PROJECTS
                   </h2>
                 </div>
-                <div className="space-y-3">
+                {/* <div className="space-y-3">
                   {languages.map((lang) => (
                     <div
                       key={lang.name}
@@ -316,7 +313,8 @@ export default function Portfolio() {
                       </span>
                     </div>
                   ))}
-                </div>
+                </div> */}
+                <p>This website is still under development.</p>
               </section>
 
               {/* Hobbies */}
@@ -327,7 +325,7 @@ export default function Portfolio() {
                   </div>
                   <h2 className="text-xl font-bold text-gray-800">MY BLOGS</h2>
                 </div>
-                <div className="space-y-3">
+                {/* <div className="space-y-3">
                   {hobbies.map((hobby) => (
                     <div
                       key={hobby.name}
@@ -339,7 +337,7 @@ export default function Portfolio() {
                       </span>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </section>
             </div>
           </div>

@@ -4,7 +4,7 @@ const AllBlog = () => {
   return (
    <div>
      {/* <BlogCard /> */}
-     <h1>All Blog Posts</h1>
+     <h1>This website is still under development.!</h1>
    </div>
   )
 }
