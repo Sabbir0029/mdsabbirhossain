@@ -6,11 +6,11 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#", active: true },
-    { name: "About", href: "#", active: false },
-    { name: "Skills", href: "#", active: false },
-    { name: "Portfolio", href: "#", active: false },
-    { name: "Contact", href: "#", active: false },
+    { name: "Home", href: "/", active: true },
+    { name: "My Projects", href: "/projects", active: false },
+    { name: "Skills", href: "/skills", active: false },
+    { name: "Blogs", href: "/blogs", active: false },
+    { name: "Contact", href: "/contact", active: false },
   ];
   return (
    <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 text-white">

@@ -1,10 +1,9 @@
-// import BlogCard from "./blog-card"
+
 
 const AllBlog = () => {
   return (
    <div>
-     {/* <BlogCard /> */}
-     <h1>This website is still under development.!</h1>
+     <h1 className=" text-center mt-18">This website is still under development.!</h1>
    </div>
   )
 }

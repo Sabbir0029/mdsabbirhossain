@@ -3,17 +3,18 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Facebook, Twitter, Instagram, Linkedin, Download } from "lucide-react"
+import { Facebook, Instagram, Linkedin, Download, Github } from "lucide-react"
 import Image from "next/image"
+import image from "../app/assets/sabbir-img.jpg"
 
 export default function Portfolio() {
   
 
   const socialIcons = [
     { Icon: Facebook, href: "https://www.facebook.com/sabbirahmad.shakib/" },
-    { Icon: Twitter, href: "#" },
+    { Icon: Github, href: "https://github.com/Sabbir0029" },
     { Icon: Instagram, href: "#" },
-    { Icon: Linkedin, href: "#" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/md-sabbir-hossain-8a8390227/" },
   ]
 
   return (
@@ -127,8 +128,8 @@ export default function Portfolio() {
                     }}
                   >
                     <Image
-                      src="/profile-image.jpg"
-                      alt="John Kendric - Frontend Developer"
+                      src={image}
+                      alt="sabbir - Frontend Developer"
                       fill
                       className="object-cover object-center"
                       priority
