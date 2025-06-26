@@ -55,7 +55,7 @@ export default function Contactme() {
           {/* Contact Information Cards */}
           <div className="lg:col-span-1 space-y-6">
             {/* Contact Info Card */}
-            <Card className="bg-white/10 backdrop-blur-lg border-white/20 text-white">
+            <Card className="bg-white/10 backdrop-blur-lg border-cyan-400 text-white">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-block-900">
                   <Mail className="h-5 w-5" />
@@ -102,7 +102,7 @@ export default function Contactme() {
             </Card>
 
             {/* Team Card */}
-            <Card className="bg-white/10 backdrop-blur-lg border-white text-white">
+            <Card className="bg-white/10 backdrop-blur-lg border-cyan-400 text-white">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-pink-600">
                   <Users className="h-5 w-5" />
@@ -120,7 +120,7 @@ export default function Contactme() {
 
           {/* Contact Form */}
           <div className="lg:col-span-2">
-            <Card className="bg-white/10 backdrop-blur-lg border-white/20">
+            <Card className="bg-white/10 backdrop-blur-lg border-cyan-400">
               <CardHeader>
                 <CardTitle className="text-2xl text-white">
                   Send us a Message
