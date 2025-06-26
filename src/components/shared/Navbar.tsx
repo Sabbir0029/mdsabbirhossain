@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: "Contact", href: "#", active: false },
   ];
   return (
-   <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 text-white overflow-hidden">
+   <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-900 text-white">
      <nav className="relative z-50 px-6 py-6 lg:px-12">
       <div className="flex items-center justify-between">
         <motion.div
