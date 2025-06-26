@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <div className="px-6 lg:px-12 py-12 lg:py-20">
+    <div className=" py-12 lg:py-20">
       <div className="text-center mb-8">
         <motion.h2 className="text-3xl text-cyan-400 font-bold tracking-tighter sm:text-5xl mb-2">
           Education And Training Background

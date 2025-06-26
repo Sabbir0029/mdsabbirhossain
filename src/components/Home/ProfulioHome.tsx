@@ -56,7 +56,10 @@ export default function Portfolio() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.7 }}
             >
-              A skilled and professional Full-stack web developer as well as a next.js developer. I have been working in these fields for a while and have gained much experience. I only need a chance to prove my worthiness.
+              A skilled and professional Full-stack web developer as well as a
+              next.js developer. I have been working in these fields for a while
+              and have gained much experience. I only need a chance to prove my
+              worthiness.
             </motion.p>
 
             {/* Social Icons */}
@@ -148,6 +151,10 @@ export default function Portfolio() {
             </div>
           </motion.div>
         </div>
+        {/* Education section  */}
+        <Education />
+        {/* Programming Skills */}
+        <ProgrammingSkills />
       </div>
 
       {/* Background Decorative Elements */}
@@ -177,10 +184,7 @@ export default function Portfolio() {
           }}
         />
       </div>
-      {/* Education section  */}
-      <Education />
-      {/* Programming Skills */}
-      <ProgrammingSkills />
+
       {/* frist div end point */}
     </div>
   );
